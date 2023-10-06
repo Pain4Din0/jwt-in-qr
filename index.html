@@ -85,7 +85,7 @@
             (() => {
                 if (!loadOrSetSecret()) {
                     divResult.style.backgroundColor = "#bbb"
-                    divResult.innerHTML = "<span>No secret! Ask for a secret link or <a href='/builder.html'>generate one</a>!</span>"
+                    divResult.innerHTML = "<span>您无权执行此操作。</span>"
                 }
 
                 const code = new URL(String(document.location)).searchParams.get('q')
